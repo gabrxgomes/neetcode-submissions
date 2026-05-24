@@ -8,7 +8,7 @@ class Solution:
             freq[n] = freq.get(n, 0) + 1
 
         # bucket onde índice = frequência
-        buckets = [[] for _ in range(len(nums) + 1)]
+        buckets = [[] for _ in range(len(nums) + 1)] #usamos convensao for _ in quando nao queremos passar nenhum valor na logica do for loop
         for num, count in freq.items():
             buckets[count].append(num)
 
